@@ -22,6 +22,27 @@ This repository contains the backend code for the Bus Booking System, a web appl
 1. Clone the repository:
    ```bash
    git clone https://github.com/ajmalebrahemi/Bus-Booking-System-Backend.git
+
+Navigate to the project directory:
+bash
+Copy code
+cd Bus-Booking-System-Backend
+Install dependencies:
+bash
+Copy code
+npm install
+Set up environment variables:
+Create a .env file in the root directory.
+Add the following variables:
+env
+Copy code
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+Start the server:
+bash
+Copy code
+npm start
 ## API Endpoints
 
 ### User Endpoints:
