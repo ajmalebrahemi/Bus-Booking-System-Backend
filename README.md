@@ -38,7 +38,7 @@ This repository contains the backend code for the Bus Booking System, a web appl
    JWT_SECRET=your_jwt_secret
 5. Start the server:
    ```bash
-   npm start
+   node index.js
 
 
 
