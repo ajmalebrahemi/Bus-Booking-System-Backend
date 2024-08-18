@@ -1,6 +1,3 @@
-It looks like the formatting might not have been applied correctly when you pasted the text into your README file. Here's a markdown-friendly version that should work well when pasted into a Markdown editor or GitHub:
-
-```markdown
 # Bus Booking System Backend
 
 This repository contains the backend code for the Bus Booking System, a web application designed to facilitate online bus ticket reservations. The backend is built using Node.js, Express, and MongoDB.
@@ -25,58 +22,50 @@ This repository contains the backend code for the Bus Booking System, a web appl
 1. Clone the repository:
    ```bash
    git clone https://github.com/ajmalebrahemi/Bus-Booking-System-Backend.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Bus-Booking-System-Backend
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Set up environment variables:
-   - Create a `.env` file in the root directory.
-   - Add the following variables:
-     ```env
-     PORT=3000
-     MONGO_URI=your_mongodb_connection_string
-     JWT_SECRET=your_jwt_secret
-     ```
-5. Start the server:
-   ```bash
-   npm start
-   ```
+Navigate to the project directory:
+bash
+Copy code
+cd Bus-Booking-System-Backend
+Install dependencies:
+bash
+Copy code
+npm install
+Set up environment variables:
+Create a .env file in the root directory.
+Add the following variables:
+env
+Copy code
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+Start the server:
+bash
+Copy code
+npm start
+API Endpoints
+User Endpoints:
 
-## API Endpoints
+POST /api/users/register - Register a new user.
+POST /api/users/login - Log in an existing user.
+GET /api/users/profile - Get user profile information.
+Bus Endpoints:
 
-- **User Endpoints**:
-  - `POST /api/users/register` - Register a new user.
-  - `POST /api/users/login` - Log in an existing user.
-  - `GET /api/users/profile` - Get user profile information.
+POST /api/buses - Add a new bus (Admin only).
+GET /api/buses - Get a list of all buses.
+PUT /api/buses/:id - Update bus information (Admin only).
+DELETE /api/buses/:id - Delete a bus (Admin only).
+Route Endpoints:
 
-- **Bus Endpoints**:
-  - `POST /api/buses` - Add a new bus (Admin only).
-  - `GET /api/buses` - Get a list of all buses.
-  - `PUT /api/buses/:id` - Update bus information (Admin only).
-  - `DELETE /api/buses/:id` - Delete a bus (Admin only).
+POST /api/routes - Add a new route (Admin only).
+GET /api/routes - Get a list of all routes.
+PUT /api/routes/:id - Update route information (Admin only).
+DELETE /api/routes/:id - Delete a route (Admin only).
+Booking Endpoints:
 
-- **Route Endpoints**:
-  - `POST /api/routes` - Add a new route (Admin only).
-  - `GET /api/routes` - Get a list of all routes.
-  - `PUT /api/routes/:id` - Update route information (Admin only).
-  - `DELETE /api/routes/:id` - Delete a route (Admin only).
-
-- **Booking Endpoints**:
-  - `POST /api/bookings` - Create a new booking.
-  - `GET /api/bookings` - Get a list of bookings for the logged-in user.
-
-## License
-
+POST /api/bookings - Create a new booking.
+GET /api/bookings - Get a list of bookings for the logged-in user.
+License
 This project is licensed under the MIT License.
 
-## Contact
-
+Contact
 For any questions or suggestions, please contact Mohammad Ajmal Ebrahimi at [your email address].
-```
-
-Make sure to paste this directly into the README file on GitHub or in your code editor, and it should display correctly.
